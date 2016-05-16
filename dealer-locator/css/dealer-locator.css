@@ -1,0 +1,89 @@
+.container {
+	width:80%;
+}
+.clear {
+	both:clear;
+}
+#search_result {
+	 font-size:12px;
+	 color:rgb(200,200,200);
+}
+#map{
+	height: 350px;
+	width:100%;
+}
+.search_panel{
+	background-color: red;
+}
+.search_panel input[type="search"]{
+	width: 100%;
+	border: 0px;
+	margin: 10px 0px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 5px;
+	background-color: rgb(200, 200, 200);
+
+}
+.search_panel #search_result{
+	width: 100%;
+	margin: 10px 0px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(200, 200, 200);
+	text-align: center;
+	color: rgb(19, 101, 203);
+}
+.align_left{
+	float: left !important;
+}
+.info_list {
+	margin-left:40px;
+	margin-right:40px;
+}
+.__info {
+	border:1px solid black;
+	border-radius:2px;
+	margin-bottom:20px;
+
+
+}
+.__info-header{
+	background:blue;
+	padding:5px 0px 5px 20px;
+	color:white;
+}
+.__info-body{
+	color:blue;
+	padding:10px 0px 15px 20px;
+}
+.__info-header-second{
+	float:right;
+	margin-right:20px;
+}
+.__info-body-second{
+	float:right;
+}
+.__info-body-second-tag{
+	margin-right:30px;
+}
+.__info-body-second-tag2{
+	margin-right:20px;
+}
+#search_result_under {
+	color:black;
+	font:bold;
+}
+#infoWindow{
+	
+}
+#infoWindow .dealer_name{
+	font-weight: bold;
+}
+#infoWindow .dealer_phone{
+}
+#infoWindow .dealer_address{
+}
+#infoWindow a{
+	text-decoration: none;
+}

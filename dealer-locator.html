@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<script src="./dealer-locator/js/googleMap_api.js"></script>-->	
+	<script src="dealer-locator/js/googleMap_api.js"></script>
+	<script src="dealer-locator/js/jquery.js"></script>
+	<link href="./dealer-locator/css/bootstrap.css" rel="stylesheet" />
+	<link href="./dealer-locator/css/bootstrap-theme.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./dealer-locator/css/dealer-locator.css">
+	
+	
+</head>
+<body>		
+	<div class="cmap" id="map"></div>	
+	<div class = "container">
+		<div class = "cotainer">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="input-group">						
+						<input placeholder="Enter location near you to find a dealer" name="search_location" id="search_location" type="search" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-default" id="search_btn">Go!</button>
+						</span>					
+					</div>	
+				</div>
+				<div class="col-md-6">					
+					<span id="search_result">The Result</span>						
+				</div>	
+			</div>
+			<div class="map_Datalist">
+				<span id="search_result_under">Showing,,,</span>
+				<div id = "info_list"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdgMi9-0XwHier-g15219kgFRAl1dq0Aw&libraries=places&signed_in=true&callback=initMap" async defer></script>
+	<script src="./dealer-locator/js/dealers-map.js"></script>
+</body>
+
+</html>
+
