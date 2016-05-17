@@ -106,7 +106,7 @@ DEALER_MAP.loadDealers = function() {
         });
     } else {
         DEALER_MAP.timer = setTimeout("DEALER_MAP.drawDealers()", 1000);
-    }
+     }
 }
 
 DEALER_MAP.drawDealers = function() {
