@@ -44,7 +44,6 @@ DEALER_MAP.init = function() {
         // Browser doesn't support Geolocation
         this.handleLocationError(false, this.infoWindow, this.map.getCenter());
     }
-
     this.searchBox = new google.maps.places.SearchBox(document.getElementById('search_location'));
     google.maps.event.addListener(this.searchBox, 'places_changed', function() {
         var places = DEALER_MAP.searchBox.getPlaces();
@@ -69,6 +68,7 @@ DEALER_MAP.init = function() {
 }
 
 DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {
+	
     if (browserHasGeolocation) {
         var content = "Error: The Geolocation service failed.";
     } else {
