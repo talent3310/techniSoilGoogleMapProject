@@ -212,9 +212,9 @@ DEALER_MAP.dealer_locator = function(dealer, i){
 		DEALER_MAP.map.setCenter(pos);
 		//DEALER_MAP.map.setZoom(4);
 		var contentString_info = "<div id='infoWindow'>" + 
-			"<span class='dealer_name'>"  + dealer.name + "</span><br/>" + 
-			"<span class='dealer_phone'>"  + dealer.phone + "</span><br/>" + 
-			"<a href='" + dealer.website + "'>"  + dealer.website + "</a><br/>" + 
+			"<span  class='dealer_name'>"  +  dealer.name  + "</span><br/>" + 
+			"<span  class='dealer_phone'>"  +  dealer.phone + "</span><br/>" + 
+			"<a href='" + dealer.website  + "'>"  + dealer.website + "</a><br/>" + 
 			"<span class='dealer_address'>"  + dealer.address + " " + dealer.address2 + "</span><br/>" + 
 			"</div>";
 			DEALER_MAP.infoWindow.setContent(contentString_info);
