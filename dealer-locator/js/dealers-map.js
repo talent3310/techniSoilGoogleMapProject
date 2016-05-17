@@ -46,7 +46,6 @@ DEALER_MAP.init = function() {
     }
 
     this.searchBox = new google.maps.places.SearchBox(document.getElementById('search_location'));
-
     google.maps.event.addListener(this.searchBox, 'places_changed', function() {
         var places = DEALER_MAP.searchBox.getPlaces();
 
@@ -112,9 +111,7 @@ DEALER_MAP.loadDealers = function() {
 
 DEALER_MAP.drawDealers = function() {
     var cur_bounds = this.map.getBounds();
-
     var total_count = this.dealers.length;
-
     var nearby_count = 0;
     //this.dealer_locators = new Array();
 
