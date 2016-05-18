@@ -47,28 +47,21 @@ DEALER_MAP.init = function() {
     this.searchBox = new google.maps.places.SearchBox(document.getElementById('search_location'));
     google.maps.event.addListener(this.searchBox, 'places_changed', function() {
         var places = DEALER_MAP.searchBox.getPlaces();
-
         if (places.length == 0) {
             return;
         }
-
         var bounds = new google.maps.LatLngBounds();
-
         for (var i = 0, place; place = places[i]; i++) {
             bounds.extend(place.geometry.location);
         }
-
         DEALER_MAP.map.fitBounds(bounds);
         DEALER_MAP.map.setZoom(8);
     });
-
     this.map.addListener("bounds_changed", this.loadDealers);
     this.map.addListener("center_changed", this.loadDealers);
     this.map.addListener("zoom_changed", this.loadDealers);
 }
-
-DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {
-	
+DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {	
     if (browserHasGeolocation) {
         var content = "Error: The Geolocation service failed.";
     } else {
