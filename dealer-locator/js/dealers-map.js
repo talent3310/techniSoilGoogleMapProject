@@ -67,10 +67,8 @@ DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos
     } else {
         var content = "Error: Your browser doesn't support geolocation.";
     }
-
     //this.map.setCenter(pos);
     //humanPos = pos;
-
     this.infoWindow.setPosition(pos);
     this.infoWindow.setContent(content);
 }
@@ -79,7 +77,6 @@ DEALER_MAP.loadDealers = function() {
     if (this.timer) {
         clearTimeout(this.timer);
     }
-
     var images = [{
         url: 'dealer-locator/images/pink.ico',
         size: new google.maps.Size(20, 32),
