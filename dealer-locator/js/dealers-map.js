@@ -73,10 +73,15 @@ DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos
     this.infoWindow.setContent(content);
 }
 
+
+
+
 DEALER_MAP.loadDealers = function() {
     if (this.timer) {
         clearTimeout(this.timer);
     }
+
+
     var images = [{
         url: 'dealer-locator/images/pink.ico',
         size: new google.maps.Size(20, 32),
@@ -88,6 +93,8 @@ DEALER_MAP.loadDealers = function() {
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(0, 32),
     }];
+
+
 
     if (DEALER_MAP.dealers == null) {
         $.getJSON("dealers.json", function(dealers) {
