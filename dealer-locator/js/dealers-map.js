@@ -2,6 +2,7 @@ var DEALER_MAP = {};
 var humanPos = {};
 
 function initMap() {
+
     DEALER_MAP.init();
     $("#search_btn").bind("click", function() {
         var e = jQuery.Event("keyup");
@@ -61,7 +62,7 @@ DEALER_MAP.init = function() {
     this.map.addListener("center_changed", this.loadDealers);
     this.map.addListener("zoom_changed", this.loadDealers);
 }
-DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {	
+DEALER_MAP.handleLocationError = function(browserHasGeolocation, infoWindow, pos) {
     if (browserHasGeolocation) {
         var content = "Error: The Geolocation service failed.";
     } else {
@@ -103,7 +104,7 @@ DEALER_MAP.loadDealers = function() {
         });
     } else {
         DEALER_MAP.timer = setTimeout("DEALER_MAP.drawDealers()", 1000);
-     }
+    }
 }
 
 DEALER_MAP.drawDealers = function() {
